@@ -27,6 +27,5 @@ router.get('/nameFind', auth.isAuthentication, userControl.findByName);
 router.get('/opportunities', auth.isAuthentication, userControl.isHiring);
 router.post('/apply', auth.isAuthentication, userControl.apply);
 router.post('/login',userControl.authentication);
-router.get('/check', auth.isAuthentication, userControl.Test);
 
 module.exports = router;
