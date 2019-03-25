@@ -8,7 +8,6 @@ exports.isAuthentication = function(req, res, next) {
             res.json({message:`Failed to authenticate token`})
           } else {
             req.decoded = decoded
-            console.log(req.decoded)
             next()
           }
       })
